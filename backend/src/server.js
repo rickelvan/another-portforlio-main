@@ -11,9 +11,12 @@ require('dotenv').config();
 const app = express();
 
 // Middleware
+app.use(cors({
+  origin: ['https://rickelvan.github.io', 'http://localhost:3000'],
+  credentials: true
+}));
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors());
 
 // Serve static files from the React build
 app.use(express.static(path.join(__dirname, '../..', 'portfolio-react/build')));

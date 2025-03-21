@@ -284,4 +284,22 @@ video {
 
 #back-to-top:hover {
   background-color: #c5303e;
+}
+
+.tech-stack {
+  margin-top: 20px;
+  padding: 10px;
+  border-top: 1px solid #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.tech-stack p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.tech-stack img {
+  height: 28px;
 } 

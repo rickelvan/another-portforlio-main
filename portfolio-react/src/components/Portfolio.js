@@ -137,6 +137,10 @@ const Portfolio = () => {
         <h2>Useful Links</h2>
         <p>Visit my favorite website: <a href="https://www.bmw.com/en/index.html" target="_blank" rel="noopener noreferrer">BMW Official Website</a></p>
         <p>More about my department: <a href="https://cse.ucu.ac.ug/" target="_blank" rel="noopener noreferrer">UCU Computer Science Department</a></p>
+        <div className="tech-stack">
+          <p>Built with:</p>
+          <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Built with React" />
+        </div>
       </div>
 
       <button id="back-to-top" onClick={handleBackToTop}>Back to Top</button>
