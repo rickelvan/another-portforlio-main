@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-auth",
+  "version": "1.0.0",
+  "description": "Portfolio website with authentication",
+  "main": "backend/src/server.js",
+  "scripts": {
+    "start": "node backend/src/server.js",
+    "build": "cd portfolio-react && npm install && npm run build",
+    "dev": "concurrently \"npm run start\" \"cd portfolio-react && npm start\"",
+    "install-all": "npm install && cd portfolio-react && npm install"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

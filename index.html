@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Derrick Elvan Katende Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #back-to-top {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    #back-to-top:hover {
+      background-color: #c5303e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>My Portfolio</div>
+    <nav>
+      <a href="#home" class="active">Home</a>
+      <a href="#education">Education</a>
+      <a href="#hobby-video">Hobby Video</a>
+      <a href="#personal-details">Personal Details</a>
+      <a href="#useful-links">Useful Links</a>
+      <a href="#" id="logout" style="color: #e63946;">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Theme Toggle Button -->
+  <button id="theme-toggle">Switch to Light Mode</button>
+
+  <div id="home" class="home">
+    <div class="profile-container">
+      <h2>Derrick</h2>
+      <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+    </div>
+    <div class="content">
+      <h1>Hey, It's <span style="color: #e63946;">Derrick</span></h1>
+      <p>I'm a <span class="dynamic-text" style="font-size: 28px;"></span><span class="typing-cursor" style="font-size: 28px;">|</span></p>
+      <div class="social-links">
+        <a href="mailto:rickelvan86@gmail.com">Email</a>
+        <a href="https://x.com/Derick_Katende" target="_blank">Twitter</a>
+        <a href="https://github.com/rickelvan" target="_blank">GitHub</a>
+      </div>
+      <a href="https://wa.me/256702164757" class="hire-button" target="_blank">Hire Me</a>
+    </div>
+  </div>
+
+  <div id="education" class="section">
+    <h2>Education - Year 1 Semester 1 Results</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Course Code</th>
+          <th>Course Title</th>
+          <th>Grade</th>
+          <th>Credit Units</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>CSC101</td><td>Introduction to Programming</td><td>A</td><td>3</td></tr>
+        <tr><td>MTH102</td><td>Calculus I</td><td>B+</td><td>4</td></tr>
+        <tr><td>PHY103</td><td>Physics for Engineers</td><td>A-</td><td>3</td></tr>
+        <tr><td>ENG104</td><td>Academic Writing</td><td>B</td><td>2</td></tr>
+        <tr><td>HIS105</td><td>World History</td><td>A</td><td>2</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div id="hobby-video" class="section">
+    <h2>Hobby Video</h2>
+    <video controls>
+      <source src="hobby.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <div id="personal-details" class="section">
+    <h2>Personal Details</h2>
+    <ul>
+      <li><strong>Full Name:</strong> Katende Derrick Elvan</li>
+      <li><strong>Student ID:</strong> B22771</li>
+      <li><strong>Course and Year:</strong> B.Sc. in Computer Science, Year 2</li>
+      <li><strong>Hobbies and Interests:</strong> Hanging out with the boys, photography, gaming</li>
+    </ul>
+  </div>
+
+  <div id="useful-links" class="section">
+    <h2>Useful Links</h2>
+    <p>Visit my favorite website: <a href="https://www.bmw.com/en/index.html" target="_blank">BMW Official Website</a></p>
+    <p>More about my department: <a href="https://cse.ucu.ac.ug/" target="_blank">UCU Computer Science Department</a></p>
+  </div>
+
+  <button id="back-to-top">Back to Top</button>
+
+  <!-- Reference external script files -->
+  <script src="script.js"></script>
+  <script src="js/auth.js"></script>
+  <script>
+    // Add logout functionality
+    document.getElementById('logout').addEventListener('click', (e) => {
+      e.preventDefault();
+      localStorage.removeItem('token');
+      window.location.href = '/login';
+    });
+  </script>
+</body>
+</html>
